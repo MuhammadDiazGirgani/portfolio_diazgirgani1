@@ -1,0 +1,28 @@
+body {
+    background: radial-gradient(#002133, #00161d);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    font-family: "Nova Round", cursive;
+    font-family: "Righteous", cursive;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    margin-top: 100px;
+    color: white;
+}
+
+h1 a {
+    color: white;
+}
+
+.tenor-gif-embed {
+    height: 500px;
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+}

@@ -1,0 +1,54 @@
+@media (max-width: 410px) {
+    .mySlides1 {
+        margin-left: 55px;
+    }
+    .mySlides2 {
+        margin-left: 50px;
+    }
+    .mySlides3 {
+        margin-left: 107px;
+    }
+    .mySlides4 {
+        margin-left: 167px;
+    }
+    #slider {
+        position: relative;
+        width: 50px;
+        margin-left: -50px;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+    #slider img {
+        float: left;
+        width: 20%;
+    }
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%;
+        }
+    }
+}

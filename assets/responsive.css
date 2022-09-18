@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    height: 50px;
+    width: 50%;
+    margin-top: -50px;
+    margin-left: 530px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    position: fixed;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 80px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.nav>.nav-links>a:hover {
+    color: rgb(255, 139, 30);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (max-width: 410px) {
+    html,
+    body {
+        margin-left: -1%;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+     ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+    .dz {
+        margin-left: -60px;
+    }
+    .nav {
+        margin-left: 195px;
+        position: fixed;
+        transition: 0.3s ease-in-out;
+    }
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        transition: 0.3s ease-in-out;
+    }
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: transparent;
+        transition: 0.3s ease-in-out;
+    }
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav>.nav-links {
+        position: fixed;
+        display: block;
+        width: 100%;
+        background-color: #002133;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        transition: 0.3s ease-in-out;
+    }
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+        transition: 0.3s ease-in-out;
+    }
+    .nav>#nav-check:checked~.nav-links {
+        margin-left: 120px;
+        width: 20vh;
+        height: calc(30vh);
+        overflow-y: auto;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -ms-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+    }
+    body .jumbotron {
+        margin-bottom: -10px;
+    }
+    .foto1 {
+        width: 129px;
+        margin-top: -1149px;
+        margin-left: -499px;
+        position: relative;
+    }
+    .foto2 {
+        width: 120px;
+        height: 210px;
+        margin-top: -1150px;
+        margin-left: -770px;
+    }
+    .foto4 {
+        width: 120px;
+        margin-top: -1200px;
+        margin-left: 30px;
+    }
+    .box1 {
+        width: 50px;
+        margin-top: -1125px;
+        margin-left: 24px;
+    }
+    .sapa {
+        font-size: 20px;
+        margin-top: -150px;
+        margin-left: -370px;
+        position: static;
+    }
+    .manem {
+        width: 1100px;
+        font-size: 18px;
+        margin-top: -12.5px;
+        margin-left: -320px;
+        position: static;
+    }
+    .ngaran {
+        width: 1100px;
+        font-size: 20px;
+        margin-top: -39px;
+        margin-left: -370px;
+        position: static;
+    }
+    .deskripsi {
+        width: 100px;
+        font-size: 10px;
+        margin-top: 55px;
+        margin-left: 260px;
+    }
+    .hiasan {
+        width: 10px;
+    }
+    .leaven {
+        width: 100px;
+        height: 100px;
+        margin-top: -150px;
+        margin-left: 20px;
+        transform: rotate(20deg);
+        position: relative;
+        transition: 0.1s ease-in-out;
+        -webkit-transition: 0.1s ease-in-out;
+        -moz-transition: 0.1s ease-in-out;
+        -ms-transition: 0.1s ease-in-out;
+        -o-transition: 0.1s ease-in-out;
+    }
+    .leaven:hover {
+        opacity: 0;
+        transition: 0.1s ease-in-out;
+        -webkit-transition: 0.1s ease-in-out;
+        -moz-transition: 0.1s ease-in-out;
+        -ms-transition: 0.1s ease-in-out;
+        -o-transition: 0.1s ease-in-out;
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+    }
+    .rexus {
+        width: 100px;
+        height: 100px;
+        margin-top: -100px;
+        margin-left: -40px;
+    }
+    .about {
+        margin-top: 30px;
+    }
+    .sikasep {
+        margin-top: 50px;
+    }
+    .judul-about {
+        margin-top: -200px;
+        margin-left: -20px;
+        padding-left: 180px;
+        width: 600px;
+        height: 65vh;
+        font-size: 25px;
+    }
+    .fot1 {
+        width: 126px;
+        margin-top: -688px;
+        margin-left: -495px;
+        position: relative;
+    }
+    .otof2 {
+        width: 120.5px;
+        height: 203px;
+        margin-top: -690px;
+        margin-left: -767px;
+    }
+    .otof4 {
+        width: 120px;
+        margin-top: -735px;
+        margin-left: -45px;
+    }
+    .box2 {
+        width: 50px;
+        margin-top: -855px;
+        margin-left: 24px;
+    }
+    .isi-about {
+        width: 120px;
+        font-size: 8px;
+        margin-top: -470px;
+        margin-left: 240px;
+    }
+    .gallery {
+        margin-top: -1290px;
+    }
+    .judul-galeri {
+        margin-top: 1140px;
+        margin-left: 45px;
+        margin-bottom: 70px;
+        font-size: 25px;
+    }
+    .isi-gallery {
+        margin-top: -770px;
+        margin-left: 130px;
+        margin-bottom: -300px;
+        width: 150px;
+        font-size: 8px;
+    }
+    .flip-box {
+        margin-left: 100px;
+    }
+    .skill {
+        width: 450px;
+        margin-left: -20px;
+        height: 229vh;
+    }
+    .skil {
+        margin-bottom: 250px;
+        margin-left: 178px;
+        font-size: 25px;
+    }
+    .container {
+        margin-top: -50px;
+        margin-left: 290px;
+    }
+    .web-design {
+        margin-bottom: -35px;
+        position: relative;
+    }
+    .web-dep {
+        margin-bottom: 216px;
+        position: relative;
+    }
+    .ui-uix {
+        margin-top: -1102px;
+        position: relative;
+    }
+    .des2 {
+        width: 70%;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    .web-dep {
+        margin-top: -436px;
+    }
+    .wedepan {
+        margin-top: 500px;
+        margin-left: -520px;
+    }
+    .dev2 {
+        width: 30%;
+        margin-top: 30px;
+        margin-left: 550px;
+    }
+    .uixi {
+        margin-top: 505px;
+        margin-left: -1020px;
+    }
+    .uix2 {
+        margin-top: 30px;
+    }
+    .logo-medsos {
+        margin-left: 200px;
+    }
+    .logo-medsos i {
+        display: none;
+    }
+    .logo-medsos2 {
+        margin-bottom: 110px;
+        margin-left: 80px;
+    }
+    .flip-box-inner {
+        margin-left: 10px;
+    }
+    .flip-box-inner2 {
+        margin-left: 5px;
+    }
+    .flip-box-inner3 {
+        margin-left: -10px;
+    }
+    .flip-box-inner4 {
+        margin-left: 129px;
+    }
+    .flip-box-back .back1 {
+        margin-left: 55px;
+    }
+    .flip-box-back .back2 {
+        margin-left: 50px;
+    }
+    .flip-box-back .back3 {
+        margin-left: 106px;
+    }
+    .garis {
+        margin-left: 28px;
+    }
+    .logo-medsos2 {
+        margin-top: -90px;
+        margin-bottom: 90px;
+        margin-left: 95px;
+        font-size: 30px;
+    }
+    .contact-email {
+        margin-left: 30px;
+        width: 350px;
+    }
+    .tulisan-footer {
+        margin-left: -500px;
+        margin-top: -30px;
+        width: 900px;
+    }
+    .tulisan-footer h6 {
+        font-size: 10px;
+        padding-left: 13px;
+    }
+    .tulisan-footer h5 {
+        font-size: 10px;
+        margin-top: -63px;
+        margin-left: 620px;
+    }
+    .love {
+        margin-left: 295px;
+        margin-top: -10px;
+    }
+    .image_rotate {
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        margin-top: 550px;
+        margin-left: 320px;
+    }
+    .contact {
+        background-color: transparent;
+    }
+    .oren {
+        background-color: transparent;
+        margin-left: 10px;
+    }
+    .oren {
+        color: transparent;
+    }
+    .contact-email {
+        margin-top: -150px;
+        margin-bottom: 120px;
+    }
+}
